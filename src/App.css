@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900');
+
+#root {
+  height: 100%;
+  min-height: 100vh;
+  max-width: 1280px;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+.nav a {
+  padding: 10px 18px;
+}
+
+table,
+th,
+td {
+  border: 1px solid rgb(204, 204, 204);
+  border-collapse: collapse;
+}
+
+.users {
+  height: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+table {
+  color: #555;
+}
+
+thead {
+  background-color: #eee;
+}
+
+th,
+td {
+  padding: 8px 12px;
+}
+
+tr {
+  cursor: pointer;
+  transition: background-color 500ms ease-out;
+}
+
+tr:hover {
+  background-color: #f2f2f2;
+}
+
+tbody.skeleton td span {
+  width: 200px;
+  height: 100%;
+  border-radius: 6px;
+  background-color: rgb(212, 212, 212);
+  display: inline-block;
+  background: linear-gradient(
+        -75deg,
+        transparent 40%,
+        hsl(0 0% 100% / 40%),
+        transparent 60%
+      )
+      0 0 / 200% 100%,
+    hsl(0 0% 0% / 12%);
+  animation: load 2s infinite linear;
+  background-attachment: fixed;
+}
+
+@keyframes load {
+  to {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton:not(tbody) {
+  background-color: rgb(212, 212, 212);
+  background: linear-gradient(
+        -75deg,
+        transparent 40%,
+        hsl(0 0% 100% / 40%),
+        transparent 60%
+      )
+      0 0 / 200% 100%,
+    hsl(0 0% 0% / 12%);
+  animation: load 2s infinite linear;
+  background-attachment: fixed;
+}
+
+.controls {
+  display: flex;
+  padding: 8px 12px;
+  align-items: center;
+  justify-content: flex-end;
+  border: 1px solid rgb(204, 204, 204);
+}
+
+.controls button.main {
+  background-color: #303f9f;
+  color: white;
+  margin-inline: 4px;
+}
+
+.controls button.main:disabled {
+  background-color: #c5cae9;
+}
+
+.controls button:not(.main) {
+  display: block;
+  margin-inline: 4px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.controls button:not(.main) {
+  background-color: transparent;
+}
+
+.controls.diable-touch {
+  pointer-events: none;
+}
+
+.controls button:not(.main).active {
+  background-color: #eeeeee;
+}
+
+.user {
+  width: 100%;
+  max-width: 1000px;
+  padding: 40px 20px;
+  margin-inline: auto;
+}
+
+.user header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 0px;
+}
+
+.user header img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.user h1 {
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.not-found {
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.not-found h1 {
+  font-size: 150px;
+  font-weight: 200;
+  margin: 0;
+}
